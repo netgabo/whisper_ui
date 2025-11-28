@@ -83,3 +83,4 @@ npm run dev
 *   **Real-time Visualization**: Visual feedback during recording.
 *   **Modern UI**: Futuristic and responsive design.
 *   **File Support**: Upload audio files for transcription.
+# whisper_ui
