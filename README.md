@@ -8,6 +8,9 @@ Before you begin, ensure you have the following installed on your system:
 
 *   **Python 3.8+**: [Download Python](https://www.python.org/downloads/)
 *   **Node.js 16+**: [Download Node.js](https://nodejs.org/)
+*   **OpenAI Whisper**: You must have Whisper installed on your machine.
+    *   Install via pip: `pip install -U openai-whisper`
+    *   Or install from source: `pip install git+https://github.com/openai/whisper.git`
 *   **FFmpeg**: Required by `openai-whisper` for audio processing.
     *   **macOS**: `brew install ffmpeg`
     *   **Windows**: `winget install ffmpeg` or download from [ffmpeg.org](https://ffmpeg.org/)
@@ -83,5 +86,3 @@ npm run dev
 *   **Real-time Visualization**: Visual feedback during recording.
 *   **Modern UI**: Futuristic and responsive design.
 *   **File Support**: Upload audio files for transcription.
-# whisper_ui
-# whisper_ui
