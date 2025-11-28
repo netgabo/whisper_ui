@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-blue: #00f3ff;
+  --color-neon-purple: #bc13fe;
+  --color-neon-green: #0aff0a;
+
+  --color-dark-bg: #050505;
+  --color-dark-card: rgba(20, 20, 20, 0.6);
+
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  background-color: #050505;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: radial-gradient(circle at 50% 0%, #1a1a2e 0%, #050505 100%);
+}
+
+@layer utilities {
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .neon-border {
+    box-shadow: 0 0 5px var(--color-neon-blue), 0 0 10px var(--color-neon-blue);
+  }
+
+  .input-field {
+    @apply bg-dark-card border border-gray-800 rounded px-3 py-2 text-white focus:outline-none focus:border-neon-blue transition-colors;
+  }
+}
